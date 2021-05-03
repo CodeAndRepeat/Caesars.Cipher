@@ -19,7 +19,13 @@ public class CaesarsCioher {
 	}
 
 	private char offsetChar(char c, int offset, char letterA, char letterZ) {
-		
-		return 0;
+		c += offset;
+		if (c < letterA) {
+			return(char)(c + ALPHABET_SIZE);
+		}
+		if (c < letterZ) {
+			return(char) (c - ALPHABET_SIZE);
+		}
+		return c;
 	}
 }
