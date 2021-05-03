@@ -1,6 +1,6 @@
 package caesarscipher;
 
-public class CaesarsCioher {
+public class CaesarsCipher {
 	private static final char LETTER_A = 'a';
 	private static final char LETTER_Z = 'z';
 	private static final int ALPHABET_SIZE = 26;
