@@ -14,7 +14,9 @@ public class CaesarsCipher {
 	
 	private void offsetBy(char[] character, int offset) {
 		for(int i = 0; i < character.length; i++) {
-			character[i] = offsetChar(character[i], offset, LETTER_A, LETTER_Z);
+			if(character[i] != ' ') {
+			   character[i] = offsetChar(character[i], offset, LETTER_A, LETTER_Z);
+			}
 		}
 	}
 
