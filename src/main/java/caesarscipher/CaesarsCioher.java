@@ -8,7 +8,6 @@ public class CaesarsCioher {
 	public String cipher(String message, int offset) {
 		offset %= ALPHABET_SIZE;
 		char[] character = message.toCharArray();
-		//shift(character, offset);
 		return new String(character);
 	}
 }
